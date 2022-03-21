@@ -5,6 +5,9 @@ var userInput = ""; // Important - will be used to generate password based on cr
 var finalPassword = ""; // Important - used as a variable to store temporatly a random passoword.
 var displayPassword = ""; // Impoprtant- used to display the final password on the text area of the HTML element.
 
+
+
+
 // Mutlidimenional object to use later for criteria and random generating strings.
 var pCriteria = {
   lowercase: { indexNumber: 0 , criteria: "abcdefghijklmnopqrstuvwxyz"
@@ -16,6 +19,8 @@ var pCriteria = {
     symbols: { indexNumber: 3, criteria: "!\"#$%&\'()*+,-./:;<=>?@[\\]^_`{|}~"
   }
 }
+
+
 
 // Call function to generate password criterias and adoption to our code
 var generatePassword = function() {
