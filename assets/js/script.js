@@ -22,7 +22,6 @@ var pCriteria = {
 
 
 
-// Call function to generate password criterias and adoption to our code
 var generatePassword = function() {
 
 
@@ -274,16 +273,13 @@ function generatePasswordRandomness(userInput, pLenght) {
         break;
     }
   }
-  // Our final password is ready to be returned! --> finalPassword back to displayPassword
   return finalPassword;
 }
 
 
-  
-// Write password to the #password input
 function writePassword() {
  
-  //initilaize all global variables
+  
   arraySplit = ""; // Used to translate input array back to the user as a string with slice
   exitApplication = false; // on/off switch for running the app
   userInput = ""; // Important - will be used to generate password based on criteria
@@ -293,11 +289,7 @@ function writePassword() {
   var password = generatePassword(); // Call the generatePassword(). Global variable used instead for displayPassword.
   // Once we have achived valid criteria input, we want to tell the user what lenght they want from 8-128 characters.
   // Call Function to validate length
-  var pLenght = passLenght();
-  // We are back from our passLenght() function with sucess.
-  // We are now ready to gather our final pssword based on criteia and lenght. 
-  // We then use our global variable displayPassword to store the output of our global finalPassword.
-  // We then pass the valid userInput and Lenght selected by the user.
+  var pLenght = passLenght()
   displayPassword = generatePasswordRandomness(userInput,pLenght);
 
 
