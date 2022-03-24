@@ -8,7 +8,7 @@ var displayPassword = ""; // Impoprtant- used to display the final password on t
 
 
 
-// Mutlidimenional object to use later for criteria and random generating strings.
+
 var pCriteria = {
   lowercase: { indexNumber: 0 , criteria: "abcdefghijklmnopqrstuvwxyz"
   },
@@ -25,7 +25,6 @@ var pCriteria = {
 var generatePassword = function() {
 
 
-   //initilaize all global variables
    arraySplit = ""; // Used to translate input array back to the user as a string with slice
    exitApplication = false; // on/off switch for running the app
    userInput = ""; // Important - will be used to generate password based on criteria
@@ -190,10 +189,7 @@ function generatePasswordRandomness(userInput, pLenght) {
   // I need it to be from e.g 8--> 0 - 7 for my indexing array to be checked and printed later.
   var valueRandom = 0;
     
-  //var counter = 1; // Counter for the while loop
-  // We need to at a minimum use the criteria from user first as a "round"
-  // E.g 8 lenght selected by user. First round of user input e.g 1 2, lenght of 2 is the array. Therefore I need sample 8 (lenght selected by user)-2(User-input).
-  // Round of 2 (strict random in order) and 6 (random after round)
+  
   var counter = userInput.length // Use as our while loop topmost.
   var UserCounter = userInput.length // Counter to say in line with the user input index to avoid undefines random attempts.
   var finalPassword = "";  // Used to stored concatenate the strings together to finally assign to our displayPassword.
