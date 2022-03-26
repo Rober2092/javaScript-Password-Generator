@@ -7,3 +7,9 @@ Randomly generated passwords can provide greater security for sensitive data. HT
 .HTML
 .CSS
 .JavaScript
+ # mobile version
+
+ <img src= "./assets/images/IMG_mobile screen.PNG" />
+
+  # website link 
+  https://rober2092.github.io/javaScript-Password-Generator/
